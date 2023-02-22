@@ -1,0 +1,14 @@
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+    font-size: 140%;
+}
+
+#deleteUser .grid-layout {
+    grid-template-areas: "h3"
+                        "deleteTable"
+                        "deleteForm";
+}
+

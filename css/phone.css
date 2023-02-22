@@ -1,0 +1,38 @@
+header {
+    font-size: 90%;
+}
+
+body {
+    font-size: 80%;
+    margin: 1%;
+}
+
+p {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 120%;
+}
+
+.table h4 {
+    font-size: 120%;
+}
+
+.about p {
+    padding: 1% 4%;
+}
+
+label {
+    font-size: 80%;
+}
+
+#account .grid-layout {
+    grid-template-areas: "h3"
+                        "accountInfo"
+                        "viewEarnings";
+}
+
+#account section {
+    padding: 2%
+}

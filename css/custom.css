@@ -1,0 +1,670 @@
+/* ========== Nav ========== */
+nav {
+    text-align: center;
+    position: sticky;
+    background-color:rgb(55, 59, 67);
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 1% 4%;
+    text-transform: uppercase;
+    color:white;
+    font-size: 110%;
+    font-family: Gill Sans, "sans-serif";
+    font-weight: 600;
+}
+
+.activePage {
+    background-color: white;
+    color: red;
+}
+
+.earnings{
+    color:white;
+    text-align:center;
+}
+
+nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+.dropDownMenu {
+    display: inline-block;
+}
+
+.dropDownMenu .dropDownBtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    margin: 0;
+}
+
+.dropDownOptions {
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+    position: absolute;
+}
+
+.dropDownOptions a {
+    display: block;
+    float: none;
+    padding: 1em;
+    text-align: left;
+    font-size: 100%
+}
+
+.dropDownMenu:hover .dropDownOptions {
+    display: block;
+}
+
+/* ========== Body ========== */
+
+body {
+    background-color:rgb(40, 44, 52);
+    color: white;
+    font-family:Helvetica, "sans-serif";
+    font-weight: 200;
+}
+
+main {
+    background-image: url("../images/background_image.JPEG");
+    padding: 2%
+}
+
+section {
+    padding: 2%;
+}
+/* ========== Functionality ========== */
+
+#choice{
+    display:none;
+}
+
+#panel{
+    display:none;
+}
+
+
+/* ========== Headings ========== */
+
+header {
+    padding: 1%;
+    text-transform: uppercase;
+    font-family: Gill Sans, "sans-serif";
+    font-size: 110%;
+}
+
+h3 {
+    grid-area: h3;
+    text-align: center;
+    font-size: 200%;
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    font-family: Gill Sans, "sans-serif";
+    text-transform: uppercase;
+    padding: 1%;
+    margin: 2% 10%;
+
+}
+
+h4 {
+    font-size: 160%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Gill Sans, "sans-serif";
+    padding: 1%;
+    margin: 4%;
+}
+
+/* ========== Grid-Layout ========== */
+
+.grid-layout {
+    display: grid;
+    margin: 1% 4%;
+}
+
+/* ========== Register Page (register.php) ========== */
+
+
+#register .grid-layout {
+    grid-template-areas:
+        "h3 h3 h3"
+        "about about logIn"
+        "about about signUp"
+         "table table table";
+
+}
+
+.frmSignUp {
+    grid-area: signUp;
+    margin: 2%;
+    font-size: 110%;
+}
+
+.frmLogIn {
+    grid-area: logIn;
+    margin: 2%;
+    font-size: 110%;
+}
+
+
+.about {
+    grid-area: about;
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    font-size: 120%;
+    margin: 5% 2% 0% 2%;
+}
+
+.about p {
+    text-indent: 5%;
+}
+
+.table {
+    grid-area: table;
+}
+
+
+/* ========== Home Page (homePage.php) ========== */
+
+#homePage .grid-layout {
+    grid-template-areas:
+        "h3 h3 h3"
+        "about about about"
+         "table table table";
+}
+
+
+#homePage .about {
+    grid-area: about;
+}
+
+#homePage .table {
+    grid-area: table;
+}
+
+/* ========== Log In Page (logIn.php) ========== */
+
+#logIn .grid-layout {
+    grid-template-areas: "h3 h3 h3"
+                         "logIn logIn logIn";
+
+}
+
+#logIn .logIn {
+    grid-area: logIn;
+    margin: auto;
+}
+
+
+#logIn h3 {
+    margin: auto;
+    padding: 3%;
+}
+
+.email{
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    margin: 1% 0;
+
+}
+
+.password{
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    margin: 5% 0;
+
+}
+
+
+
+/* ========== Account Page (account.php) ========== */
+
+
+#account .grid-layout {
+    grid-template-areas: "h3 h3"
+                         "accountInfo viewEarnings"
+                         "accountInfo viewEarnings";
+}
+
+.friends{
+
+    grid-area: about;
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    font-size: 120%;
+    margin: 5% 2% 0% 2%;
+
+}
+
+.accountInfo {
+    grid-area: accountInfo;
+}
+
+.viewEarnings {
+    grid-area: viewEarnings;
+    text-align: center;
+}
+
+
+#account section {
+    background-color:rgb(40,44,52);
+    border: 2px solid white;
+    margin: 2% 5%;
+    font-size: 100%;
+    padding: 4% 6%;
+}
+
+#account strong {
+    color: red;
+    text-decoration: underline;
+}
+
+.viewEarnings a {
+    color: white;
+    padding: 2%;
+}
+
+.viewEarnings a:hover {
+    background-color: white;
+    color: green;
+}
+
+
+/* ========== Data Tracking Page (log.php) ========== */
+
+#log .grid-layout {
+    grid-template-areas: "h3 h3 h3"
+                         "section section section"
+                          "form form form";
+}
+
+#log section {
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    grid-area: section;
+    margin: 2% 6%;
+}
+
+#log form {
+    grid-area: form;
+}
+
+#log h3 {
+    margin: 1% 4%;
+}
+
+
+
+/* ========== Friends Page (friends.php) ========== */
+#friends .grid-layout {
+    grid-template-areas: "h3 h3 h3"
+                         "search search search"
+                         "requests requests requests"
+                            "friends friends friends";
+}
+
+.search {
+    grid-area: search;
+    background-color: rgb(40, 44, 52);
+    border: 2px solid white;
+    margin: 1% 4%;
+}
+
+.requests {
+    grid-area: requests;
+    background-color: rgb(40, 44, 52);
+    border: 2px solid white;
+    margin: 3% 4%;
+}
+
+.friends {
+    grid-area:friends;
+}
+
+#friends h4 {
+    margin: 0 10%;
+
+}
+
+.requests fieldset {
+    background-color: rgba(10,50,160,0.5)
+}
+
+#friends tr:nth-child(odd) {
+    background-color: rgba(10,10,200,0.75)
+}
+/* ========== Sign Up Page (signUp.php) ========== */
+
+#signUp .grid-layout {
+    grid-template-areas: "signUp"
+                        "signUp"
+                        "signUp";
+}
+
+.signUp {
+    grid-area: signUp;
+    margin: auto;
+}
+
+
+/* ========== View Earnings (display.php) ========== */
+#display .grid-layout {
+    grid-template-areas: "h3 h3 h3"
+                          "display display totalNet";
+}
+
+.display {
+    grid-area: display;
+}
+
+#display h4 {
+    background-color: rgb(40,44,52);
+    border: 2px solid white;
+}
+
+#display table {
+    font-size: 120%;
+}
+
+.display table tr:nth-child(even) {
+    background-color:rgb(40,44,52);
+}
+.display table tr:nth-child(odd) {
+    background-color:rgb(55,59,67);
+}
+
+.totalNet{
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    grid-area: totalNet;
+    margin: 2% 6%;
+    text-align:center;
+}
+
+
+/* ========== Admin Home (admin.php) ========== */
+#admin .grid-layout {
+    grid-template-areas: "h3 h3 h3"
+                          ". admin .";
+}
+
+.admin {
+    grid-area: admin;
+    background-color: rgb(40,44,52);
+    font-size: 120%;
+    border: 2px solid white;
+}
+
+#display h4 {
+    background-color: rgb(40,44,52);
+    border: 2px solid white;
+}
+
+#display table {
+    font-size: 120%;
+}
+
+/* ========== Update List (updateList.php) ========== */
+#updateList .grid-layout {
+    grid-template-areas: "h3 h3 h3"
+                        "update update update";
+}
+
+.update {
+    grid-area: update;
+}
+
+/* ========== Update Form (updateEarnings.php) ========== */
+#updateEarnings .grid-layout {
+    grid-template-areas: "h3 h3 h3"
+                        ". updateForm .";
+}
+
+#updateEarnings .updateForm {
+    grid-area: updateForm;
+    background-color: rgb(40,44,52);
+    border: 2px solid white;
+}
+
+
+/* ========== Delete User (deleteUser.php) ========== */
+#deleteUser .grid-layout {
+    grid-template-areas: "h3 h3"
+                         "deleteTable deleteForm";
+
+}
+
+.deleteTable {
+    grid-area: deleteTable;
+}
+
+.deleteForm {
+    grid-area: deleteForm;
+    margin: 30% 0;
+}
+
+table caption {
+    font-size: 160%;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: rgba(10,10,10,0.75);
+    padding: 1%;
+
+}
+
+#deleteUser table {
+    background-color: rgba(255,255,255,0.5)
+}
+
+#deleteUser th {
+    background-color: rgba(180,10,10,0.75);
+}
+
+#deleteUser tr {
+    background-color: rgba(10,10,150, 0.75);
+    font-weight: 400;
+}
+
+
+#deleteUser form {
+    background-color: rgba(10,10,10,0.75);
+}
+
+/*======== Friends Data (displayFriendsData.php) ========*/
+#displayFriendsData .grid-layout {
+    grid-template-areas: "h3 h3 h3 h3"
+                         ". display display .";
+}
+
+#displayFriendsData table {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#displayFriendsData td {
+    text-align: center;
+    padding: 6%;
+}
+
+#displayFriendsData tr:nth-child(odd) {
+    background-color: rgba(10,10,100, 0.75);
+}
+
+#displayFriendsData tr:nth-child(even) {
+    background-color: rgba(150,10,10, 0.75);
+}
+
+#displayFriendsData th {
+    font-size: 140%;
+    padding: 5%;
+}
+
+/*===== Friendships (friendStats.php) ====*/
+#friendStats .grid-layout {
+    grid-template-areas: "h3 h3 h3 h3"
+                         "mostFriends mostFriends friendTable friendTable";
+
+}
+
+.mostFriends {
+    grid-area: mostFriends;
+    background-color: rgba(40,40,40,0.75);
+}
+
+.friendsTable {
+    grid-area: friendsTable;
+}
+
+
+/* ========== Tables ========== */
+
+table {
+    border: 2px solid white;
+    border-collapse: collapse;
+    margin: auto;
+    background-color:rgba(255,255,255,0.5);
+    width: 100%;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(10,10,10,0.75);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(200,10,10,0.75);
+}
+
+
+td, th {
+    border: 2px solid white;
+    padding: 2%;
+    font-size: 120%;
+}
+
+th {
+    font-family: Gill Sans, "sans-serif";
+    text-transform: uppercase;
+}
+
+table a {
+    text-transform: uppercase;
+    color: white;
+    padding: 5%;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+table a:hover {
+    background-color: white;
+    color: black;
+}
+
+.table h4 {
+    background-color:rgb(40, 44, 52);
+    padding: 2%;
+    margin: 2%;
+    border: 2px solid white;
+    font-size: 150%;
+}
+
+
+/* ========== Forms/Buttons ========== */
+
+fieldset {
+    border: none;
+    text-align: center;
+}
+
+legend {
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    padding: 5% 10%;
+    border-radius: 2em;
+}
+
+button, .button {
+    font-size: 110%;
+    border: 3px solid white;
+    border-radius: 1em;
+    font-weight: 800;
+    padding: 5%;
+}
+
+.frmLogIn button, .button {
+    background-color: red;
+}
+
+.frmSignUp button {
+    background-color: green;
+}
+
+.frmLogIn button:hover, .button:hover {
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+}
+
+.frmSignUp button:hover {
+    background-color: white;
+    color: green;
+    border: 3px solid green;
+}
+
+#logIn legend {
+    font-size: 120%;
+}
+
+#logIn label {
+    background-color:rgb(40, 44, 52);
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+#log label {
+    background-color:rgb(40, 44, 52);
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 700;
+
+}
+
+.log {
+    background-color:rgb(40, 44, 52);
+    border: 2px solid white;
+    margin: 1% 6%;
+
+}
+
+#friendRequest .button {
+    text-transform: uppercase;
+}
+
+#signUp fieldset {
+    padding: 3%;
+    font-size: 120%;
+    background-color: rgb(40, 44, 52);
+    margin: 5% 1%;
+    border: 2px solid white;
+}
+
+#signUp label {
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+#log .button {
+    padding: 3% 6%;
+    text-transform: uppercase;
+    font-size: 130%;
+}
+
+
+footer a {
+    color : rgb(250,10,30);
+}
